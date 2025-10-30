@@ -55,9 +55,8 @@ cd wavestone_test
 
 # 3) (Optional) Install dependencies if running locally
 pip install -r requirements.txt
-Project Structure
-bash
-
+```
+### Project Structure
 
 wavestone_test/
 ├── data/

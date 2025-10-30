@@ -64,7 +64,7 @@ wavestone_test/
 ├── notebooks/
 │   └── churn_analysis.ipynb               # Main Colab/Jupyter notebook
 ├── README.md
-└── requirements.txt                       # Optional dependency list
+└── documentation/                         # Project PDF
 
 ### Usage
 Open the notebook in Google Colab (recommended):
@@ -74,47 +74,44 @@ https://colab.research.google.com/github/YanisBoNueve/wavestone_test/blob/main/n
 
 ### What the notebook does
 
-Loads and profiles the dataset,
+- Loads and profiles the dataset,
 
-Engineers features (incl. NumServices),
+- Engineers features (incl. NumServices),
 
-Trains & compares models (Logistic Regression, Random Forest, XGBoost),
+- Trains & compares models (Logistic Regression, Random Forest, XGBoost),
 
-Evaluates with Accuracy, F1 and a confusion matrix,
+- Evaluates with Accuracy, F1 and a confusion matrix,
 
-Explains results with feature importances and SHAP,
+- Explains results with feature importances and SHAP,
 
-Delivers business-ready recommendations and a predict() function for integration.
+- Delivers business-ready recommendations and a predict() function for integration.
 
 ### Results & Insights
-Top churn drivers typically observed:
+- Top churn drivers typically observed:
 
-Contract type (Month-to-month more at risk),
+- Contract type (Month-to-month more at risk),
 
-Tenure (lower seniority → higher churn),
+- Tenure (lower seniority → higher churn),
 
-MonthlyCharges,
+- MonthlyCharges,
 
-NumServices (service bundle complexity).
+- NumServices (service bundle complexity).
 
-Best model (example): XGBoost with strong F1 while remaining explainable via SHAP.
+- Best model (example): XGBoost with strong F1 while remaining explainable via SHAP.
 
-Business impact: Insights support retention strategies (targeted offers, contract upgrades, service bundling simplification).
+- Business impact: Insights support retention strategies (targeted offers, contract upgrades, service bundling simplification).
 
 ### Next Steps
-Hyperparameter tuning with cross-validation,
+- Hyperparameter tuning with cross-validation,
 
-MLOps pipeline: model registry, performance & drift monitoring,
+- MLOps pipeline: model registry, performance & drift monitoring,
 
-Integration into CRM workflows (priority lists, alerts),
+- Integration into CRM workflows (priority lists, alerts),
 
-Explainability dashboard (Streamlit / Power BI) for operations teams.
+- Explainability dashboard (Streamlit / Power BI) for operations teams.
 
 ### Testing
-If you maintain tests, run them with your preferred framework (e.g., pytest):
-
-bash
-Copier le code
+- If you maintain tests, run them with your preferred framework (e.g., pytest):
 pytest -q
 
 ### Author
